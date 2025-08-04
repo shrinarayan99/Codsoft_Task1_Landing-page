@@ -1,0 +1,165 @@
+/* Full Page Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBZotdvGtzNTdWlppV8t857VumSTxW8ZIWw&s') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Overlay Box Styling for Better Readability */
+.section,
+.header,
+.footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(41, 44, 55, 0.9);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-container {
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-container input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #44475a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #66697a;
+}
+
+/* Header Content */
+.header-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.1em;
+}
+
+/* Section */
+.section {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Card Styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  display: inline-block;
+  width: 30%;
+}
+
+.card h3, .card p {
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive Cards */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: left;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-columns div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-note,
+.license {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
